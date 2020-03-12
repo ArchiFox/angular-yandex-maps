@@ -38,6 +38,11 @@ export class YandexMapComponent implements OnInit {
   @Output() public mouse = new EventEmitter<IEvent>();
   @Output() public multitouch = new EventEmitter<IEvent>();
 
+  //add for quick access to the API functionality
+  public ymaps: any;
+  public map: any; 
+
+
   constructor(private _yandexMapService: YandexMapService) { }
 
   public ngOnInit(): void {
@@ -57,9 +62,13 @@ export class YandexMapComponent implements OnInit {
         this._logErrors();
 
         const map = this._createMap(ymaps, generateRandomId());
-
+        
         this.emitEvents(ymaps, map);
         this._addObjectsOnMap(ymaps, map);
+
+        this.ymaps = ymaps;
+        this.map = map;
+
       });
   }
 

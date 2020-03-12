@@ -1,10 +1,10 @@
 {
-  "name": "angular8-yandex-maps",
+  "name": "angular8-yandex-maps-mod",
   "version": "1.11.0",
   "description": "Angular module for Yandex.Maps",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ddubrava/angular-yandex-maps.git"
+    "url": "git+https://github.com/ArchiFox/angular-yandex-maps.git"
   },
   "keywords": [
     "Angular",
@@ -15,7 +15,7 @@
     "Карты",
     "ЯндексКарты"
   ],
-  "author": "ddubrava",
+  "author": "ddubrava,ArchiFox",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ddubrava/angular-yandex-maps/issues"
